@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Test Openlayers</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="../classes/jquery-1.9.1.js"></script>
+	
+        <link rel="stylesheet" href="../media/OpenLayers-v3.15.1-dist/ol.css" type="text/css">
+        <script src="../media/OpenLayers-v3.15.1-dist/ol.js" type="text/javascript"></script>
+    
+        <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false&amp;key=AIzaSyChwOoz0ZXqQS6EAVcdngeb_17KMLW3eTM&amp;language=en"></script>
+        
+
+<!--    <script>
+        OpenLayers.ImgPath = '../media/OpenLayers-2.13.1/img/';
+    </script>
+    -->
+   <script type="text/javascript" src="mapping_v3.1.js"></script>
+    
+   
+
+    </head>
+
+    <body>
+        ﻿<span id="project_id" style="display: none;">test</span>
+        <h1>OL V3</h1>
+        ﻿    <div id="olmap" style="height:400px; " class=" olmap"> </div>
+        ﻿    <div id="gmap" style="height:400px; " class=" gmap"> </div>
+        
+        
+        <script type="text/javascript">
+            var entity_types = ["clinic"];//{{ project.entity_type|safe }};
+            $(document).ready(function() {
+                //$( "#how_to" ).accordion({ collapsible: true, active: 0 });
+                init_map();
+            });           
+        </script>        
+    </body>
+</html>
